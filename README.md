@@ -1,12 +1,16 @@
 # Machine Hunter Workshop v0.1
+<img src="screenshots/3.jpg" width="260" alt="Machine Hunter"><img src="screenshots/1.jpg" width="260" alt="Machine Hunter"><img src="screenshots/bg1.jpg" width="260" alt="Machine Hunter">
 
 A map editor and modding toolkit for the 1997 Windows version of **Machine Hunter**. Build maps, edit entities, browse game assets and launch your creations in the original game engine.
+
+
 
 ## Download
 
 Download **MachineHunter-Workshop-v0.1-windows-x64.zip** from this repository's Releases page. Extract the entire ZIP into a writable folder, such as `C:/Games/MachineHunterWorkshop`. Do not run it inside the ZIP or extract it over your original game installation.
 
 You need Windows 10/11 **64-bit**, a modern browser with WebGL, and your own copy of the original Windows game. The release includes its application runtime and built mods: **no Node.js, npm, Visual Studio or internet connection is needed to install or run it**. GitHub's automatic Source code downloads are for developers; use the Windows release ZIP to run Workshop.
+
 
 ## First-time setup
 
@@ -28,6 +32,8 @@ You need Windows 10/11 **64-bit**, a modern browser with WebGL, and your own cop
 
 Workshop and Play offer setup automatically if files are missing. Rerun Setup.bat to repair the copied game files. Keep the Workshop console open while editing; closing it stops the local server.
 
+<img src="screenshots/git2.png" width="600" alt="map editor">
+<img src="screenshots/git1.png" width="600" alt="map editor">
 ### Supported game version
 
 v0.1 requires the **unmodified 699,904-byte Windows retail MACHHUNT.EXE**. Setup validates its SHA-256:
@@ -60,6 +66,8 @@ Save projects wherever you choose. Autosaves are separate copies in `projects/au
 
 To make mods, see [docs/MODDING.md](docs/MODDING.md).
 
+<img src="screenshots/git3.png" width="600" alt="map editor"><img src="screenshots/git4.png" width="300" alt="map editor">
+
 ## Troubleshooting
 
 | Problem | What to do |
@@ -76,6 +84,8 @@ To make mods, see [docs/MODDING.md](docs/MODDING.md).
 ## Updating or removing
 
 Extract future releases into a new folder, keep your .mhproject files and custom mods backed up, and run Setup for the new release. To uninstall, close Workshop and the game, back up your work, and delete the extracted folder. The original game installation is unaffected.
+
+<img src="screenshots/git5.png" width="300" alt="map editor"><img src="screenshots/git6.png" width="300" alt="map editor">
 
 ## Source and license
 
