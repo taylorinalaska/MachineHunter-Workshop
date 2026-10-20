@@ -1,0 +1,19 @@
+# The sources are written with LF line endings; keep them that way on checkout.
+* text=auto eol=lf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Public Git archives exclude local/private material, including already tracked history files.
+/research export-ignore
+/.claude export-ignore
+/.codex export-ignore
+/AGENTS.md export-ignore
+/game export-ignore
+/retail export-ignore
+/projects export-ignore
+/build export-ignore
+/release export-ignore
+/node_modules export-ignore
+/docs/ROADMAP.md export-ignore
+/scripts/build-gamedata.ts export-ignore
+/runtime/third_party export-ignore

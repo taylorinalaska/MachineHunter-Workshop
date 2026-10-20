@@ -1,0 +1,27 @@
+{
+  "format": "mhmod-1",
+  "id": "controls",
+  "name": "Controls",
+  "version": "1.0.0",
+  "author": "Machine Hunter Workshop",
+  "description": "Choose the keyboard key for each of the game's controls. Set them in the Mod Menu (press Enter on a control, then the new key) or on the Workshop's Mods page. Choosing a key another control has moves it: that control is left with no key.",
+  "options": [
+    { "key": "forward", "label": "Forward", "section": "Movement", "type": "key", "unique": "keys", "default": "UP" },
+    { "key": "back", "label": "Back", "section": "Movement", "type": "key", "unique": "keys", "default": "DOWN" },
+    { "key": "turn_left", "label": "Turn left", "section": "Movement", "type": "key", "unique": "keys", "default": "LEFT" },
+    { "key": "turn_right", "label": "Turn right", "section": "Movement", "type": "key", "unique": "keys", "default": "RIGHT" },
+    { "key": "strafe", "label": "Strafe (hold)", "section": "Movement", "type": "key", "unique": "keys", "default": "SHIFT", "help": "While it is held, turning moves you sideways and you keep facing the same way." },
+    { "key": "fire", "label": "Fire", "section": "Weapons", "type": "key", "unique": "keys", "default": "CTRL", "help": "Also picks an item in the pause menu." },
+    { "key": "fire_forward", "label": "Fire forward", "section": "Weapons", "type": "key", "unique": "keys", "default": "Y" },
+    { "key": "fire_left", "label": "Fire left", "section": "Weapons", "type": "key", "unique": "keys", "default": "G" },
+    { "key": "fire_right", "label": "Fire right", "section": "Weapons", "type": "key", "unique": "keys", "default": "J" },
+    { "key": "fire_back", "label": "Fire back", "section": "Weapons", "type": "key", "unique": "keys", "default": "H" },
+    { "key": "weapon_toggle", "label": "Weapon toggle", "section": "Weapons", "type": "key", "unique": "keys", "default": "W" },
+    { "key": "fire_secondary", "label": "Fire secondary", "section": "Weapons", "type": "key", "unique": "keys", "default": "SPACE", "help": "Uses the powerup chosen with Powerup toggle." },
+    { "key": "powerup_toggle", "label": "Powerup toggle", "section": "Weapons", "type": "key", "unique": "keys", "default": "S" },
+    { "key": "map", "label": "Map", "section": "Game", "type": "key", "unique": "keys", "default": "TAB" },
+    { "key": "pause", "label": "Pause", "section": "Game", "type": "key", "unique": "keys", "default": "ENTER", "help": "Also picks an item in the menus." },
+    { "key": "numpad", "label": "Numpad fires too", "section": "Game", "type": "toggle", "default": true, "help": "The numpad's 8, 4, 6 and 2 fire forward, left, right and back, its corners fire two ways at once, and 0 strafes, as in the original game." },
+    { "key": "reset", "label": "Original keys", "section": "Game", "type": "action", "help": "Put every control back on the original game's key." }
+  ]
+}

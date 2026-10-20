@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://machine-hunter.local/schema/mhmod-1.json",
+  "title": "Machine Hunter Mod Package",
+  "type": "object",
+  "required": [
+    "format",
+    "id",
+    "name"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "format": {
+      "const": "mhmod-1"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9._-]{1,95}$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 1024
+    },
+    "author": {
+      "type": "string",
+      "maxLength": 128
+    },
+    "version": {
+      "type": "string",
+      "maxLength": 64
+    },
+    "options": {
+      "type": "array",
+      "description": "Settings the mod offers. They are stored in mods/settings.cfg, edited on the Workshop's Mods page and listed by the in-game Mod Menu.",
+      "items": {
+        "type": "object",
+        "required": [
+          "key",
+          "type"
+        ],
+        "properties": {
+          "key": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9_.-]{1,40}$"
+          },
+          "label": {
+            "type": "string",
+            "maxLength": 40
+          },
+          "type": {
+            "enum": [
+              "toggle",
+              "choice",
+              "number",
+              "key",
+              "action"
+            ]
+          },
+          "section": {
+            "type": "string",
+            "maxLength": 24,
+            "description": "Menu page; the mod's name when left out."
+          },
+          "help": {
+            "type": "string",
+            "maxLength": 400,
+            "description": "A sentence shown in the Workshop."
+          },
+          "default": {
+            "type": [
+              "boolean",
+              "number",
+              "string"
+            ]
+          },
+          "choices": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "maxLength": 24
+            },
+            "minItems": 1,
+            "maxItems": 16
+          },
+          "min": {
+            "type": "integer"
+          },
+          "max": {
+            "type": "integer"
+          },
+          "step": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "restart": {
+            "type": "boolean",
+            "description": "Takes effect the next time the game starts."
+          },
+          "saved": {
+            "type": "boolean",
+            "description": "False for a switch that resets to its default every launch."
+          },
+          "hidden": {
+            "type": "boolean",
+            "description": "Left out of in-game menus."
+          }
+        }
+      }
+    }
+  },
+  "description": "mod.json of a mod package. Keys the game does not know are ignored, so a mod may carry notes of its own."
+}

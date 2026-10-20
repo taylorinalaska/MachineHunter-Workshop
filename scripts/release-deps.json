@@ -1,0 +1,12 @@
+{
+  "node": {
+    "version": "v24.22.0",
+    "sha256": "ba93f9a70bd86fce3ebbb39ec758501458453467aa92a34a0a3602d1e3fc2b9c"
+  },
+  "lua": {
+    "version": "5.4.8",
+    "sha256": "336d198958a086d9b20d2ea737aca42fff56aded6eb04c79cb824b29897c1429",
+    "archive_sha256": "7401d0ae2b1970c88cd554ce342e688730fb00670278ebef38302ea2c3946734",
+    "url": "https://downloads.sourceforge.net/project/luabinaries/5.4.8/Windows%20Libraries/Dynamic/lua-5.4.8_Win32_dllw6_lib.zip"
+  }
+}

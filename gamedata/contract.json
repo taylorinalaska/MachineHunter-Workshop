@@ -1,0 +1,294 @@
+{
+  "format": "mh-sdk-contract-1",
+  "api_version": 5,
+  "package": {
+    "format": "mhmod-1",
+    "manifest": "mod.json",
+    "native_entry": "mod.dll",
+    "script_entry": "main.lua",
+    "maps_dir": "maps",
+    "assets_dir": "assets",
+    "archive_dir": "assets/archive",
+    "audio_dir": "assets/audio",
+    "settings_file": "mods/settings.cfg"
+  },
+  "coordinates": {
+    "map_subunits_per_cell": 256,
+    "world_units_per_cell": 16777216,
+    "facing_period": 2048
+  },
+  "events": [
+    {
+      "name": "RUNTIME_READY",
+      "value": 1
+    },
+    {
+      "name": "FRAME",
+      "value": 2
+    },
+    {
+      "name": "MAP_LOADING",
+      "value": 3
+    },
+    {
+      "name": "MAP_LOADED",
+      "value": 4
+    },
+    {
+      "name": "GROUP_CHANGED",
+      "value": 5
+    },
+    {
+      "name": "PLAYER_CHANGED",
+      "value": 6
+    },
+    {
+      "name": "ENTITY_CREATED",
+      "value": 7
+    },
+    {
+      "name": "ENTITY_DESTROYED",
+      "value": 8
+    },
+    {
+      "name": "PLAYER_CELL_CHANGED",
+      "value": 9
+    },
+    {
+      "name": "OPTION_CHANGED",
+      "value": 10
+    },
+    {
+      "name": "ACTION",
+      "value": 11
+    },
+    {
+      "name": "DRAW",
+      "value": 12
+    },
+    {
+      "name": "DRAW_OVERLAY",
+      "value": 13
+    },
+    {
+      "name": "LEVEL_COMPLETE",
+      "value": 14
+    }
+  ],
+  "levels": [
+    {
+      "index": 0,
+      "id": "MARS",
+      "single_player": true
+    },
+    {
+      "index": 1,
+      "id": "LABS0",
+      "single_player": true
+    },
+    {
+      "index": 2,
+      "id": "DOCK2",
+      "single_player": true
+    },
+    {
+      "index": 3,
+      "id": "MINES4",
+      "single_player": true
+    },
+    {
+      "index": 4,
+      "id": "CITY1",
+      "single_player": true
+    },
+    {
+      "index": 5,
+      "id": "CITY2",
+      "single_player": true
+    },
+    {
+      "index": 6,
+      "id": "HOSP0",
+      "single_player": true
+    },
+    {
+      "index": 7,
+      "id": "SEWER1",
+      "single_player": true
+    },
+    {
+      "index": 8,
+      "id": "JUNK1",
+      "single_player": true
+    },
+    {
+      "index": 9,
+      "id": "POWER3",
+      "single_player": true
+    },
+    {
+      "index": 10,
+      "id": "SWAMP",
+      "single_player": true
+    },
+    {
+      "index": 11,
+      "id": "MILIT1",
+      "single_player": true
+    },
+    {
+      "index": 12,
+      "id": "MILIT3",
+      "single_player": true
+    },
+    {
+      "index": 13,
+      "id": "ASTER1",
+      "single_player": true
+    },
+    {
+      "index": 14,
+      "id": "ASTER2",
+      "single_player": true
+    },
+    {
+      "index": 15,
+      "id": "ALIEN1",
+      "single_player": true
+    },
+    {
+      "index": 16,
+      "id": "BOSS3MAP",
+      "single_player": true
+    },
+    {
+      "index": 17,
+      "id": "DMMARS1",
+      "single_player": false
+    },
+    {
+      "index": 18,
+      "id": "DMMILIT1",
+      "single_player": false
+    },
+    {
+      "index": 19,
+      "id": "DMBARR1",
+      "single_player": false
+    },
+    {
+      "index": 20,
+      "id": "DMALIEN1",
+      "single_player": false
+    },
+    {
+      "index": 21,
+      "id": "DMLABS1",
+      "single_player": false
+    },
+    {
+      "index": 22,
+      "id": "DMSWAMP1",
+      "single_player": false
+    },
+    {
+      "index": 23,
+      "id": "DMSEWER1",
+      "single_player": false
+    },
+    {
+      "index": 24,
+      "id": "DMASTER1",
+      "single_player": false
+    }
+  ],
+  "asset_roles": [
+    "map",
+    "terrain",
+    "palette",
+    "palette_table",
+    "remap",
+    "brightness",
+    "automap",
+    "sprites",
+    "sound",
+    "music",
+    "briefing"
+  ],
+  "generic_archive_overrides": [
+    {
+      "extension": ".MAP",
+      "min_size": 1,
+      "max_size": 327680
+    },
+    {
+      "extension": ".PAL",
+      "min_size": 1024,
+      "max_size": 1024
+    },
+    {
+      "extension": ".PLT",
+      "min_size": 1024,
+      "max_size": 1024
+    },
+    {
+      "extension": ".RMP",
+      "min_size": 65536,
+      "max_size": 65536
+    },
+    {
+      "extension": ".BRT",
+      "min_size": 73728,
+      "max_size": 73728
+    },
+    {
+      "extension": ".LMP",
+      "min_size": 1,
+      "max_size": 20480
+    }
+  ],
+  "specialized_archive_overrides": [
+    {
+      "extension": ".BIN",
+      "kind": "terrain",
+      "max_tiles": 1024,
+      "tile_bytes": 4096
+    },
+    {
+      "extension": ".B",
+      "kind": "sprite",
+      "max_frames": 10000,
+      "max_file_bytes": 4194304,
+      "arena_bytes": 8388608
+    },
+    {
+      "extension": ".BMP",
+      "kind": "bitmap",
+      "max_file_bytes": 102400,
+      "bpp": 8,
+      "compression": 0,
+      "palette_entries": 256
+    }
+  ],
+  "custom_audio": {
+    "format": "wav",
+    "encoding": "pcm",
+    "channels": [
+      1,
+      2
+    ],
+    "bits_per_sample": [
+      8,
+      16
+    ],
+    "sample_rate_min": 8000,
+    "sample_rate_max": 48000,
+    "max_seconds": 60,
+    "runtime_pcm": {
+      "channels": 1,
+      "bits_per_sample": 8,
+      "sample_rate": 22050
+    },
+    "retail_replacement_rule": "assets/audio/<retail RAW basename>.wav"
+  }
+}

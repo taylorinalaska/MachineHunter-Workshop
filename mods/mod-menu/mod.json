@@ -1,0 +1,13 @@
+{
+  "format": "mhmod-1",
+  "id": "mod-menu",
+  "name": "Mod Menu",
+  "version": "1.0.0",
+  "author": "Machine Hunter Workshop",
+  "description": "An in-game menu that lists the options of every installed mod. Press F3 while playing to open it.",
+  "options": [
+    { "key": "open_key", "label": "Open and close", "type": "key", "default": "F3", "help": "The key that opens the menu in the game." },
+    { "key": "dim", "label": "Background dimming", "type": "number", "min": 20, "max": 100, "step": 10, "default": 80, "help": "How much the game is darkened behind the menu, in percent." },
+    { "key": "hint", "label": "Key hint at startup", "type": "toggle", "default": true, "help": "Show which key opens the menu for a few seconds when the game starts." }
+  ]
+}

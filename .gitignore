@@ -1,0 +1,44 @@
+# Dependencies and build output
+node_modules/
+dist/
+build/
+*.tsbuildinfo
+.vite/
+
+# Proprietary retail material: supply these from your own copy of the game.
+# game/     the playable install (patched EXE, DATA.ARC, movies, built runtime)
+# retail/   untouched originals used as patch/analysis input
+/game/
+/retail/
+/research/disassembly/
+
+# Native build intermediates
+*.obj
+*.lib
+*.exp
+*.pdb
+*.ilk
+
+# Local state
+/game/logs/
+*.log
+.DS_Store
+Thumbs.db
+
+# Maps you save from the Workshop: your documents, not the toolkit's source.
+# Ones made from retail levels contain retail level data.
+/projects/
+
+# Private material and release output
+/research/
+/.claude/
+/.codex/
+/AGENTS.md
+/release/
+/tools/node/
+/docs/ROADMAP.md
+/scripts/build-gamedata.ts
+/runtime/third_party/
+.env
+.env.*
+*.dmp

@@ -1,0 +1,27 @@
+{
+  "name": "@mh/workshop",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Machine Hunter Workshop: map builder, entity lab and mod packager.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "node server/serve.mjs"
+  },
+  "dependencies": {
+    "@mh/core": "*",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "three": "^0.186.1",
+    "zustand": "^5.0.15"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/three": "^0.186.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "vite": "^8.3.4"
+  },
+  "license": "GPL-3.0-only"
+}

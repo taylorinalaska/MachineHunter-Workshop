@@ -1,0 +1,19 @@
+{
+  "format": "mhmod-1",
+  "id": "free-camera",
+  "name": "Free Camera",
+  "version": "1.0.0",
+  "author": "Machine Hunter Workshop",
+  "description": "Detach the view from the player and fly it around the level with the arrow keys. Switch it on from the Mod Menu, or give it a key of its own.",
+  "options": [
+    { "key": "active", "label": "Free camera", "section": "Camera", "type": "toggle", "default": false, "saved": false, "help": "On while you are flying the camera. Not remembered between launches." },
+    { "key": "zoom", "label": "Zoom", "section": "Camera", "type": "choice", "choices": ["Far", "Normal", "Close"], "default": "Normal" },
+    { "key": "speed", "label": "Camera speed", "section": "Camera", "type": "choice", "choices": ["2", "4", "8", "16", "32", "64"], "default": "8" },
+    { "key": "center", "label": "Center on player", "section": "Camera", "type": "action" },
+    { "key": "toggle_key", "label": "Free camera key", "section": "Camera", "type": "key", "default": "NONE", "help": "A key that switches the free camera on and off without opening the Mod Menu." },
+    { "key": "up", "label": "Move up", "section": "Movement keys", "type": "key", "default": "UP", "hidden": true },
+    { "key": "down", "label": "Move down", "section": "Movement keys", "type": "key", "default": "DOWN", "hidden": true },
+    { "key": "left", "label": "Move left", "section": "Movement keys", "type": "key", "default": "LEFT", "hidden": true },
+    { "key": "right", "label": "Move right", "section": "Movement keys", "type": "key", "default": "RIGHT", "hidden": true }
+  ]
+}

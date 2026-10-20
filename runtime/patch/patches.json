@@ -1,0 +1,66 @@
+{
+  "purpose": "Byte patches that let the retail executable start on current Windows, plus the layout of the appended mod-loader section. Applied by scripts/patch-exe.ts.",
+  "original_sha256": "1e89f2a61c7627426301fd1c45424981ceba643036b4d536df91cb1f6b986714",
+  "original_size": 699904,
+  "original_entry_va": "0x00461980",
+  "title_controller_bypassed": false,
+  "required_title_assets": [
+    "MOVIES\\TITLE1.ETV",
+    "MOVIES\\TITLE2.ETV"
+  ],
+  "compatibility_patches": [
+    {
+      "file_offset": "0x0001A7DE",
+      "va": "0x0041B3DE",
+      "length": 41,
+      "purpose": "Select the original existing windowed/GDI renderer rather than DirectDraw exclusive fullscreen.",
+      "before": "83e802747483e804741348751cc605fcac670000c60509004b0000eb0c881dfcac6700881d09004b00",
+      "after": "c605fcac670000c60509004b0000eb1990909090909090909090909090909090909090909090909090"
+    },
+    {
+      "file_offset": "0x0001A85E",
+      "va": "0x0041B45E",
+      "length": 5,
+      "purpose": "Ignore saved fullscreen state and retain the original GDI renderer.",
+      "before": "a009004b00",
+      "after": "31c0909090"
+    },
+    {
+      "file_offset": "0x0003B386",
+      "va": "0x0043BF86",
+      "length": 1,
+      "purpose": "Bypass the original single-player physical-CD Retry/Cancel protection gate through its accepted branch.",
+      "before": "75",
+      "after": "eb"
+    },
+    {
+      "file_offset": "0x0007A698",
+      "va": "0x0047C098",
+      "length": 1,
+      "purpose": "Use the game's original WinMM/MCI CD-audio-disabled path. INTERNAL audio and DirectSound are untouched.",
+      "before": "01",
+      "after": "00"
+    },
+    {
+      "file_offset": "0x0002C0F0",
+      "va": "0x0042CCF0",
+      "length": 1,
+      "purpose": "Return from the redundant post-MGM physical-CD reacquisition routine.",
+      "before": "a1",
+      "after": "c3"
+    }
+  ],
+  "pe_extension": {
+    "section_name": ".mhmod",
+    "section_header_file_offset": "0x00000268",
+    "raw_offset": "0x000AAE00",
+    "raw_size": "0x00000200",
+    "rva": "0x0035B000",
+    "va": "0x0075B000",
+    "virtual_size": "0x00000046",
+    "entry_stub_used_bytes": 70,
+    "purpose": "Load MHRuntime.dll/MHRuntimeInit before restoring startup state and jumping to original entrypoint."
+  },
+  "patched_sha256": "a792e4a87e88ea623bb7b071a1850743bab7c70d0aaf448f9994c29988a2dc46",
+  "patched_size": 700416
+}

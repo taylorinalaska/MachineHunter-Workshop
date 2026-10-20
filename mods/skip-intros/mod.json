@@ -1,0 +1,12 @@
+{
+  "format": "mhmod-1",
+  "id": "skip-intros",
+  "name": "Skip Intros",
+  "version": "1.0.0",
+  "author": "Machine Hunter Workshop",
+  "description": "Starts the game at the main menu instead of playing the logos, the intro movie and the PRESS START title loop.",
+  "options": [
+    { "key": "movies", "label": "Skip logos and intro", "section": "Startup", "type": "toggle", "default": true, "restart": true, "help": "Skip the publisher logos, the intro movie and the legal screen." },
+    { "key": "title", "label": "Skip PRESS START", "section": "Startup", "type": "toggle", "default": true, "restart": true, "help": "Go past the title loop straight to the main menu." }
+  ]
+}

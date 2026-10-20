@@ -1,0 +1,37 @@
+{
+  "name": "machine-hunter-workshop",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Modding toolkit, map builder and runtime for the 1997 PC release of Machine Hunter.",
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace @mh/workshop",
+    "build": "npm run build --workspace @mh/workshop",
+    "start": "node apps/workshop/server/serve.mjs",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc -b",
+    "extract": "tsx scripts/extract-archive.ts",
+    "gen:runtime-headers": "tsx scripts/gen-runtime-headers.ts",
+    "runtime:build": "powershell -NoProfile -ExecutionPolicy Bypass -File runtime/build.ps1",
+    "game:test": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/game-test.ps1",
+    "game:patch": "tsx scripts/patch-exe.ts",
+    "release": "node scripts/build-release.mjs",
+    "test:setup": "node --test scripts/setup-game.test.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "esbuild": "^0.28.2",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.3"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "GPL-3.0-only"
+}

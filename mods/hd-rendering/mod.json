@@ -1,0 +1,16 @@
+{
+  "format": "mhmod-1",
+  "id": "hd-rendering",
+  "name": "HD Rendering",
+  "version": "1.1.0",
+  "author": "Machine Hunter Workshop",
+  "description": "Renders the world at up to 640x480 instead of its original 320x240, with real extra detail; menus, briefings and the in-game interface keep the original layout, scaled up. Shows the picture in a window of any size or fullscreen, kept 4:3 or stretched, sharp or smooth.",
+  "options": [
+    { "key": "resolution", "label": "Render resolution", "section": "Picture", "type": "choice", "choices": ["320x240", "400x300", "512x384", "640x480"], "default": "640x480", "restart": true, "help": "How much detail the world is drawn with. 320x240 is the original game; 640x480 is as far as the game's renderer goes. A change takes effect the next time the game starts." },
+    { "key": "shape", "label": "Shape", "section": "Picture", "type": "choice", "choices": ["Keep 4:3", "Stretch to fill"], "default": "Keep 4:3", "help": "Keep 4:3 shows the picture as the game was made, with black bars on a wider screen." },
+    { "key": "scaling", "label": "Scaling", "section": "Picture", "type": "choice", "choices": ["Sharp", "Smooth", "Whole pixels"], "default": "Sharp", "help": "Sharp keeps the pixels crisp, Smooth blends them, Whole pixels scales only by 2x, 3x and so on, leaving a border where the screen is not an exact fit." },
+    { "key": "display", "label": "Display", "section": "Window", "type": "choice", "choices": ["Window", "Fullscreen"], "default": "Window", "help": "Fullscreen fills the monitor the game is on, without changing the screen's resolution." },
+    { "key": "fullscreen_key", "label": "Fullscreen key", "section": "Window", "type": "key", "default": "F11", "help": "Switches between a window and fullscreen." },
+    { "key": "window_size", "label": "Window size", "section": "Window", "type": "choice", "choices": ["640x480", "960x720", "1280x960", "1600x1200", "Largest that fits"], "default": "Largest that fits", "help": "The size the window opens at; it can also be resized and maximized. A size bigger than the screen becomes the largest that fits." }
+  ]
+}

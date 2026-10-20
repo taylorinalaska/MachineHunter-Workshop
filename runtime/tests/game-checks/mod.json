@@ -1,0 +1,8 @@
+{
+  "format": "mhmod-1",
+  "id": "game-checks",
+  "name": "Game checks",
+  "version": "1.0.0",
+  "author": "Machine Hunter Workshop",
+  "description": "Automated in-game checks. scripts/game-test.ps1 installs this for one run and removes it again; it is not for playing with."
+}

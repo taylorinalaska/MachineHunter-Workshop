@@ -1,0 +1,30 @@
+{
+  "format": "mhmod-1",
+  "id": "dev-tools",
+  "name": "Developer Tools",
+  "version": "1.0.0",
+  "author": "Machine Hunter Workshop",
+  "description": "For map makers and modders: an information panel, labels and paths drawn over the actors, the collision the engine really uses, enemies that ignore you, slow motion, memory snapshots and an event trace.",
+  "options": [
+    { "key": "hud", "label": "Info panel", "section": "Debug", "type": "toggle", "default": false, "help": "A panel in the corner with the frame number, the actor count and the player's health. The four options below add lines to it." },
+    { "key": "player", "label": "Panel: player state", "section": "Debug", "type": "toggle", "default": false },
+    { "key": "weapon", "label": "Panel: weapon and ammo", "section": "Debug", "type": "toggle", "default": false },
+    { "key": "status", "label": "Panel: tool status", "section": "Debug", "type": "toggle", "default": false },
+    { "key": "cheats", "label": "Panel: cheat flags", "section": "Debug", "type": "toggle", "default": false },
+    { "key": "inspector", "label": "Actor inspector", "section": "Debug", "type": "toggle", "default": false, "help": "Marks one actor in the world and lists its position, health, AI state and path in the info panel." },
+    { "key": "next_actor", "label": "Inspect next actor", "section": "Debug", "type": "action" },
+    { "key": "types", "label": "Actor type numbers", "section": "Debug", "type": "toggle", "default": false, "help": "The entity type number above every actor, as used in the Workshop's entity list." },
+    { "key": "states", "label": "Actor AI states", "section": "Debug", "type": "toggle", "default": false },
+    { "key": "headings", "label": "Actor headings", "section": "Debug", "type": "toggle", "default": false },
+    { "key": "paths", "label": "Actor paths", "section": "Debug", "type": "toggle", "default": false, "help": "The route each actor is following, as drawn with the Paths tool." },
+    { "key": "points", "label": "Path points", "section": "Debug", "type": "toggle", "default": false },
+    { "key": "targets", "label": "Target lines", "section": "Debug", "type": "toggle", "default": false, "help": "A line from each actor to whatever it is currently aiming at." },
+    { "key": "collision", "label": "Collision wireframe", "section": "Debug", "type": "toggle", "default": false, "help": "Outlines what blocks movement, as the engine sees it." },
+
+    { "key": "passive", "label": "Passive enemies", "section": "Game", "type": "toggle", "default": false, "saved": false, "help": "Enemies do not notice the player. Not remembered between launches." },
+    { "key": "speed", "label": "Game speed", "section": "Game", "type": "choice", "choices": ["1x", "1/2", "1/4", "1/8", "Pause"], "default": "1x", "saved": false },
+    { "key": "snapshot", "label": "Save memory snapshot", "section": "Game", "type": "action", "help": "Writes the game's memory to game/logs/snapshots." },
+    { "key": "trace", "label": "Runtime trace", "section": "Game", "type": "toggle", "default": false, "help": "Logs every shot and every point of damage to game/logs/runtime-trace.log." },
+    { "key": "trace_mark", "label": "Add trace marker", "section": "Game", "type": "action" }
+  ]
+}
