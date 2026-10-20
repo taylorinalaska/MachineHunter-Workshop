@@ -3,8 +3,20 @@
 
 A map editor and modding toolkit for the 1997 Windows version of **Machine Hunter**. Build maps, edit entities, browse game assets and launch your creations in the original game engine.
 
+- Detailed map editor
+- in-game diagnostic menu
+- 2x 'HD' rendering capabilities (running at least at native asset resolutions, then upscaled)
+- use custom textures and sounds in the Workshop
+- tons of free bugs
 
-
+There are bugs. Stupid ones.
+Known bugs:
+- setting a trigger manually doesn't seem to work properly. not fully tested
+- assets rendered 2 layers above the player, created in the editor specifically, pop in and out sometimes
+- retail map hard-coded missions persist through custom missions
+Untested, likely to be buggy:
+- entity creator
+- effect creator is pretty bare bones
 ## Download
 
 Download **MachineHunter-Workshop-v0.1-windows-x64.zip** from this repository's Releases page. Extract the entire ZIP into a writable folder, such as `C:/Games/MachineHunterWorkshop`. Do not run it inside the ZIP or extract it over your original game installation.
